@@ -1,16 +1,19 @@
 .page {
   min-width: 1100px;
   max-width: 1600px;
-  margin: 0;
-  font-family: Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   border: 1px solid red;
 }
 .header{
+  display:flex;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-    /* установили ограничения для секции */
-  border: 1px solid red;
+      /* установили ограничения для секции */
+  position: relative;
+  background-color: #f2f2f2;
 
 }
 .content {
@@ -37,20 +40,56 @@
 .logo_place_header{
   width: 228px;
 	height: 32px;
-  margin-top: 30px;
-  margin-left: 64px;
-
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  z-index: 6;
 }
 .header_title{
+  display:flex;
+  width: 730px;
+  margin-left: 64px;
+  align-self: center;
+  z-index: 5;
 
+}
+.header_title_text{
+  line-height: 96px;
+  font-stretch: 600;
+  font-size: 102px;
+  color:#000;
 }
 .header_subtitle{
-
+  width: 338px;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  justify-content: center;
+  z-index: 4;
+  }
+.header_subtitle_text{
+  line-height: 25px;
+  font-weight: normal;
+  font-size: 18px;
+  color:#000;
 }
 .header_link{
-
+  position: absolute;
+  z-index: 3;
+  line-height: 25px;
+  font-weight: normal;
+  font-size: 18px;
+  text-decoration: none;
+  color:#2f80ed;
 }
 .header_main-illustration{
+  display: block;
+  width: 765px;
+	height: 608px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1;
 
 }
 .header_square-pic{
@@ -59,5 +98,5 @@
 	background:  #2f80ed ;
   margin-top: 64px;
   position: absolute;
-  right: 100px;
+  right: 0px;
 }
