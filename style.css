@@ -4,8 +4,10 @@
   margin: 0 auto;
   padding: 0;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  border: 1px solid red;
+  color:#000;
+  border: 1px solid #f2f2f2;
 }
+
 .header{
   display:flex;
   height: 100vh;
@@ -14,12 +16,15 @@
       /* установили ограничения для секции */
   position: relative;
   background-color: #f2f2f2;
-
 }
-.content {
 
+.content {
+  border: 1px solid #f2f2f2;
 }
 .description {
+  display: flex;
+  padding-top: 100px;
+  justify-content: center;
 
 }
 .digits {
@@ -45,6 +50,7 @@
   left: 64px;
   z-index: 6;
 }
+
 .header_title{
   display:flex;
   width: 730px;
@@ -53,12 +59,14 @@
   z-index: 5;
 
 }
+
 .header_title_text{
   line-height: 96px;
   font-stretch: 600;
   font-size: 102px;
-  color:#000;
+
 }
+
 .header_subtitle{
   width: 338px;
   position: absolute;
@@ -66,13 +74,14 @@
   left: 64px;
   justify-content: center;
   z-index: 4;
-  }
+}
+
 .header_subtitle_text{
   line-height: 25px;
   font-weight: normal;
   font-size: 18px;
-  color:#000;
-}
+  }
+
 .header_link{
   position: absolute;
   z-index: 3;
@@ -82,6 +91,7 @@
   text-decoration: none;
   color:#2f80ed;
 }
+
 .header_main-illustration{
   display: block;
   width: 765px;
@@ -99,4 +109,19 @@
   margin-top: 64px;
   position: absolute;
   right: 0px;
+}
+
+.two-columns{
+  width: 80%;
+  border: 1px solid #f10808;
+  display: inline-block;
+}
+.span-accent{
+  font-weight: bold;
+}
+.brief{
+  width: 175px;
+}
+.main-text{
+
 }
