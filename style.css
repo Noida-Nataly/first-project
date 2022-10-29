@@ -55,7 +55,7 @@
   overflow: hidden;
 }
 
-.kaufman_triangle {
+.kaufman__triangle {
   background: url(./images/kaufman-triangle.svg);
   width: 877px;
   height: 877px;
@@ -84,7 +84,7 @@
   z-index: 6;
 }
 
-.header_title {
+.header__title {
   display:flex;
   width: 730px;
   margin-left: 64px;
@@ -92,13 +92,13 @@
   z-index: 5;
 }
 
-.header_title_text {
+.header__title_text {
   line-height: 96px;
   font-stretch: 600;
   font-size: 102px;
 }
 
-.header_subtitle {
+.header__subtitle {
   width: 338px;
   position: absolute;
   bottom: 30px;
@@ -107,13 +107,13 @@
   z-index: 4;
 }
 
-.header_subtitle_text {
+.header__subtitle_text {
   line-height: 25px;
   font-weight: normal;
   font-size: 18px;
 }
 
-.header_link {
+.header__link {
   position: absolute;
   z-index: 3;
   line-height: 25px;
@@ -123,7 +123,7 @@
   color:#2f80ed;
 }
 
-.header_main-illustration {
+.header__main-illustration {
   display: block;
   width: 765px;
 	height: 608px;
@@ -133,7 +133,7 @@
   z-index: 1;
 }
 
-.header_square-pic {
+.header__square-pic {
   width: 568px;
 	height: 568px;
 	background: #2f80ed ;
@@ -154,7 +154,7 @@
   width: 175px;
 }
 
-.two-columns__brief_text {
+.two-columns__brief-text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -169,23 +169,23 @@
   justify-content: space-between;
 }
 
-.two-columns__main-text_text {
+.two-columns__paragraph {
   margin:0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
 
-.two-columns__main-text_place {
+.two-columns__paragraph_place {
   padding: 30px 0 30px 0;
 }
 
-.two-columns_span-accent {
+.two-columns__span-accent {
   font-weight: bold;
   font-weight: 600;
 }
 
-.section_title {
+.section-title {
   width: 60%;
   text-align: center;
   line-height: 1.15;
@@ -194,7 +194,7 @@
   margin:0;
 }
 
-.section_subtitle {
+.section-subtitle {
   width: 60%;
   text-align: center;
   line-height: 34px;
@@ -211,26 +211,26 @@
   justify-content: space-between;
 }
 
-.table_cell {
+.table__cell {
 width: 250px;
 margin-top: 60px;
 }
 
-.table_heading {
+.table__heading {
   margin: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
 }
 
-.table_text {
+.table__text {
   margin: 20px 0 0 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
 }
 
-.feynman_title {
+.feynman__title {
   margin: 0;
   padding-bottom: 70px;
   width: 648px;
@@ -240,14 +240,14 @@ margin-top: 60px;
   font-weight: 600;
 }
 
-.feynman_subtitle {
+.feynman__subtitle {
   margin: 0;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
 }
 
-.feynman_link {
+.feynman__link {
   position: absolute;
   right: 48px;
   top: 50%;
@@ -258,39 +258,34 @@ margin-top: 60px;
   color:#2f80ed;
 }
 
-.feynman_image {
-width: 867px;
-height: 637px;
-/*position: absolute;
-left:0;
-bottom: 0;
-order:-1;*/
-}
-
-.kaufman_table_cell {
+.table__cell {
   width: 200px;
   margin-top: 80px;
   z-index: 3;
 }
 
-.theme_dark {
+.section-title_theme-dark,
+.section-subtitle_theme-dark,
+.table_theme-dark,
+.footer__theme-dark,
+.footer__column-link_theme-dark {
   color: #f2f2f2;
 }
 
-.footer_columns {
+.footer__columns {
   display: flex;
   width: 90%;
   margin: 60px auto 40px auto;
 }
 
-.footer_column_content_copiright {
+.footer__column_content_copiright {
   flex-basis: 711px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.footer_author {
+.footer__author {
   margin: 18px 0;
   line-height: 25px;
   font-size: 18px;
@@ -298,32 +293,33 @@ order:-1;*/
 
 }
 
-.footer_column-links {
+.footer__column-links {
   display: flex;
   flex-direction: column;
   margin: 20px 0 16px 0;
 }
 
-.footer_column-heading {
+.footer__column-heading {
   margin:0;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
 }
 
-.footer_column-link {
+.footer__column-link {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
   text-decoration: none;
 }
 
-.footer_social_icon {
+.footer__social_icon {
  width: 16px;
  height: 16px;
  margin-right: 10px;
 }
 
-.footer_column_content_social, .footer_column_content_info{
+.footer__column_content_social,
+.footer__column_content_info{
   margin-left:auto;
 }
