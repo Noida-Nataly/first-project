@@ -28,7 +28,12 @@
 
 }
 .digits {
-
+display: flex;
+padding: 100px 0 100px 0;
+justify-content: center;
+flex-direction: column;
+align-items:center;
+border: 1px solid #f10808;
 }
 .feynman {
 
@@ -57,14 +62,12 @@
   margin-left: 64px;
   align-self: center;
   z-index: 5;
-
 }
 
 .header_title_text{
   line-height: 96px;
   font-stretch: 600;
   font-size: 102px;
-
 }
 
 .header_subtitle{
@@ -100,7 +103,6 @@
   right: 0px;
   bottom: 0px;
   z-index: 1;
-
 }
 .header_square-pic{
   width: 568px;
@@ -118,9 +120,10 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
 .two-columns__brief{
   width: 175px;
-  }
+}
 
 .two-columns__brief_text{
   line-height: 1.2;
@@ -128,7 +131,6 @@
   font-weight: normal;
   color:#2f80ed;
   margin: 0;
-
 }
 
 .two-columns__main-text{
@@ -144,6 +146,7 @@
   font-size: 24px;
   font-weight: normal;
 }
+
 .two-columns__main-text_place{
   padding: 30px 0 30px 0;
 }
@@ -151,4 +154,52 @@
 .two-columns_span-accent{
   font-weight: bold;
   font-weight: 600;
+}
+
+.digits__section_title{
+  width: 60%;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  border: 1px solid #f10808;
+  margin:0;
+}
+
+.digits__section_subtitle{
+  width: 60%;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  border: 1px solid #f10808;
+  margin-top:20px;
+}
+
+.table{
+  margin: 0 auto;
+  width: 1100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  border: 1px solid #f10808;
+  }
+.table_cell{
+width: 250px;
+margin-top: 60px;
+border: 1px solid #2705a5;
+}
+
+.table_heading{
+  margin: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.table_text{
+  margin: 20px 0 0 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
 }
