@@ -5,8 +5,7 @@
   padding: 0;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   color:#000;
-  border: 1px solid #f2f2f2;
-}
+ }
 
 /*Блок Header*/
 .header {
@@ -15,6 +14,7 @@
   min-height: 600px;
   max-height: 756px;
   position: relative;
+  background-color: #f2f2f2;
 }
 
 .logo {
@@ -31,28 +31,23 @@
 
 .header__title {
   display:flex;
-  width: 730px;
+  max-width: 730px;
   margin-left: 64px;
   align-self: center;
   z-index: 5;
-}
-
-.header__title_text {
   line-height: 96px;
   font-stretch: 600;
   font-size: 102px;
 }
 
 .header__subtitle {
+  margin: 0;
   width: 338px;
   position: absolute;
   bottom: 30px;
   left: 64px;
   justify-content: center;
   z-index: 4;
-}
-
-.header__subtitle_text {
   line-height: 25px;
   font-weight: normal;
   font-size: 18px;
@@ -103,9 +98,6 @@
 
 .two-columns__brief {
   width: 175px;
-}
-
-.two-columns__brief-text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -121,13 +113,13 @@
 }
 
 .two-columns__paragraph {
-  margin:0;
+  margin: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
 
-.two-columns__paragraph_place {
+.two-columns__paragraph:nth-child(2) {
   padding: 30px 0 30px 0;
 }
 
@@ -161,11 +153,12 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin-top:20px;
+  margin: 20px 0 0 0;
 }
 
 .table {
   margin: 0 auto;
+  padding: 0;
   width: 1100px;
   display: flex;
   flex-flow: row wrap;
@@ -195,17 +188,14 @@ list-style-type: none;
 /* Часть 4 Метод Фейнмана*/
 
 .feynman {
-  height: 890px;
+  min-height: 890px;
   padding-top: 100px;
+  box-sizing: border-box;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items:center;
-  background-image: url(./images/feynman.png);
-  background-size: 867px 637px;
-  background-repeat: no-repeat;
-  background-position-y: bottom;
-  background-color: #f2f2f2;
+  background: no-repeat left bottom url('../images/feynman.png'), #F2F2F2;
 }
 
 .feynman__title {
@@ -249,16 +239,16 @@ list-style-type: none;
 }
 
 /*Применение светлого шрифта на темном фоне для всех элементов*/
-.section-title_theme-dark,
-.section-subtitle_theme-dark,
-.table_theme-dark,
-.footer__columns_theme-dark,
-.footer__column-link_theme-dark {
+.section-title_theme_dark,
+.section-subtitle_theme_dark,
+.table_theme_dark,
+.footer__columns_theme_dark,
+.footer__column-link_theme_dark {
   color: #f2f2f2;
 }
 
 /*Переопределение размера ячейки для темной темы */
-.table__cell_theme-dark {
+.table__cell_theme_dark {
   width: 200px;
   margin-top: 80px;
   z-index: 3;
@@ -266,7 +256,7 @@ list-style-type: none;
 
 /*Добавление в фон треугольника*/
 .kaufman__triangle {
-  background: url(./images/kaufman-triangle.svg);
+  background: url(../images/kaufman-triangle.svg);
   width: 877px;
   height: 877px;
   color:#2f80ed;
@@ -281,6 +271,7 @@ list-style-type: none;
   min-height: 350px;
   display: flex;
   background-color: #1f1f1f;
+  color: #f2f2f2;
 }
 
 .footer__columns {
@@ -329,6 +320,7 @@ footer__column-link_theme-dark-
 }
 
 .footer__column-link {
+  color:#f2f2f2;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
