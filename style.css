@@ -8,69 +8,13 @@
   border: 1px solid #f2f2f2;
 }
 
+/*Блок Header*/
 .header {
   display:flex;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-      /* установили ограничения для секции */
   position: relative;
-}
-
-.description {
-  display: flex;
-  padding-top: 100px;
-  justify-content: center;
-}
-
-.digits {
-  display: flex;
-  padding: 100px 0 100px 0;
-  justify-content: center;
-  flex-direction: column;
-  align-items:center;
-}
-
-.feynman {
-  height: 890px;
-  padding-top: 100px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items:center;
-  background-image: url(./images/feynman.png);
-  background-size: 867px 637px;
-  background-repeat: no-repeat;
-  background-position-y: bottom;
-  background-color: #f2f2f2;
-}
-
-.kaufman {
-  display: flex;
-  background-color: #1f1f1f;
-  position: relative;
-  padding: 90px 0 90px 0;
-  justify-content: center;
-  flex-direction: column;
-  align-items:center;
-  overflow: hidden;
-}
-
-.kaufman__triangle {
-  background: url(./images/kaufman-triangle.svg);
-  width: 877px;
-  height: 877px;
-  color:#2f80ed;
-  background-size: 877px 877px;
-  position: absolute;
-  top: 0;
-  right: -210px;
-}
-
-.footer {
-  min-height: 350px;
-  display: flex;
-  background-color: #1f1f1f;
 }
 
 .logo {
@@ -143,6 +87,13 @@
   right: 0px;
 }
 
+/* часть 2 Описание контента*/
+.description {
+  display: flex;
+  padding-top: 100px;
+  justify-content: center;
+}
+
 .two-columns {
   width: 80%;
   min-height: 332px;
@@ -184,6 +135,16 @@
 .two-columns__span-accent {
   font-weight: bold;
   font-weight: 600;
+}
+
+/*Часть 3 Цифры и Факты Статистика*/
+
+.digits {
+  display: flex;
+  padding: 100px 0 100px 0;
+  justify-content: center;
+  flex-direction: column;
+  align-items:center;
 }
 
 .section-title {
@@ -232,6 +193,22 @@ list-style-type: none;
   font-weight: normal;
 }
 
+/* Часть 4 Метод Фейнмана*/
+
+.feynman {
+  height: 890px;
+  padding-top: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  background-image: url(./images/feynman.png);
+  background-size: 867px 637px;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-color: #f2f2f2;
+}
+
 .feynman__title {
   margin: 0;
   padding-bottom: 70px;
@@ -260,12 +237,19 @@ list-style-type: none;
   color:#2f80ed;
 }
 
-.table__cell_theme-dark {
-  width: 200px;
-  margin-top: 80px;
-  z-index: 3;
+/* Часть 5 Приниципы обучения от Джоша Кауфмана*/
+.kaufman {
+  display: flex;
+  background-color: #1f1f1f;
+  position: relative;
+  padding: 90px 0 90px 0;
+  justify-content: center;
+  flex-direction: column;
+  align-items:center;
+  overflow: hidden;
 }
 
+/*Применение светлого шрифта на темном фоне для всех элементов*/
 .section-title_theme-dark,
 .section-subtitle_theme-dark,
 .table_theme-dark,
@@ -274,11 +258,42 @@ list-style-type: none;
   color: #f2f2f2;
 }
 
+/*Переопределение размера ячейки для темной темы */
+.table__cell_theme-dark {
+  width: 200px;
+  margin-top: 80px;
+  z-index: 3;
+}
+
+/*Добавление в фон треугольника*/
+.kaufman__triangle {
+  background: url(./images/kaufman-triangle.svg);
+  width: 877px;
+  height: 877px;
+  color:#2f80ed;
+  background-size: 877px 877px;
+  position: absolute;
+  top: 0;
+  right: -210px;
+}
+
+/* Часть 6 и последняя))  Информирование*/
+.footer {
+  min-height: 350px;
+  display: flex;
+  background-color: #1f1f1f;
+}
+
 .footer__columns {
   display: flex;
   width: 90%;
   margin: 60px auto 40px auto;
 }
+
+/* footer__columns_theme-dark,
+footer__column-link_theme-dark-
+описаны в части 5
+с кодовым названием "Кауфман"))*/
 
 .footer__column_content_copiright {
   flex-basis: 711px;
@@ -287,12 +302,18 @@ list-style-type: none;
   justify-content: space-between;
 }
 
+/* logo - описаны в Header */
+
 .footer__author {
   margin: 18px 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+}
 
+.footer__column_content_social,
+.footer__column_content_info{
+  margin-left:auto;
 }
 
 .footer__column-links {
@@ -321,7 +342,4 @@ list-style-type: none;
  margin-right: 10px;
 }
 
-.footer__column_content_social,
-.footer__column_content_info{
-  margin-left:auto;
-}
+
