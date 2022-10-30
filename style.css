@@ -59,7 +59,6 @@
 }
 
 .header__link {
-  position: absolute;
   z-index: 3;
   line-height: 25px;
   font-size: 18px;
@@ -82,8 +81,8 @@
   width: 568px;
 	height: 568px;
 	background: #2f80ed ;
-  margin-top: 64px;
   position: absolute;
+  top: 64px;
   right: 0px;
 }
 
