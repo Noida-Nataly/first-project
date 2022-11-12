@@ -150,7 +150,6 @@
   flex-direction: column;
   align-items:center;
   margin:auto;
-  border: 1px solid red;
 }
 
 .cards {
@@ -158,12 +157,14 @@
   width:920px;
   flex-direction: row;
   flex-wrap: wrap;
+  padding:0;
+  justify-content: flex-start;
+  column-gap: 100px;
 }
 
 .cards__item {
   width: 240px;
-  margin: 60px 0 0 0;
-  border: 1px solid red;
+
 }
 
 .cards__title {
@@ -178,7 +179,8 @@
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  margin: 0 40px 43px 40px;
+  object-fit: cover;
+  margin: 60px 40px 43px 40px;
 }
 
 .cards__description {
@@ -191,9 +193,33 @@
 
 /* Блок Видео*/
 .video {
-
+  display:flex;
+  padding-top: 100px;
+  align-items: center;
+  flex-direction: column;
 }
 
+.video__iframes {
+  display:flex;
+  position: relative;
+  top: 50px;
+}
+
+.video__iframe {
+  width: 515px;
+  height: 316px;
+  border: 0;
+  margin-right: 10px;
+  margin-left: 10px;
+  overflow: visible;
+}
+
+.oakley {
+  display: flex;
+  padding-top: 160px;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
 
 /* Блок  Метод Фейнмана*/
 
@@ -236,7 +262,6 @@
   color:#2f80ed;
 }
 
-
 /*Блок  Цифры и Факты Статистика*/
 
 .digits {
@@ -254,6 +279,7 @@
   font-size: 60px;
   font-weight: 600;
   margin:0;
+  border: 1px solid red;
 }
 
 .section-subtitle {
@@ -263,6 +289,7 @@
   font-size: 24px;
   font-weight: normal;
   margin: 20px 0 0 0;
+  border: 1px solid red;
 }
 
 .table {
@@ -294,6 +321,64 @@
   font-weight: normal;
 }
 
+.khan {
+  background-color: #F2F2F2;
+  padding-top: 105px;
+  border: 1px solid red;
+}
+
+.khan__container {
+  width: 80%;
+  margin:0 auto;
+  border: 1px solid red;
+}
+
+.khan__author {
+  margin: 0;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  border: 1px solid red;
+}
+
+.khan__title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  border: 1px solid red;
+}
+
+.khan__quote {
+  width: 790px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 50px 0 0 0;
+  border: 1px solid red;
+}
+
+.khan__quote-author {
+  margin-top: 36px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  border: 1px solid red;
+}
+
+.khan__quote-author-subline {
+  margin-top: 10px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+  border: 1px solid red;
+}
+
+.khan__buy-link {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
 
 /* Блок Приниципы обучения от Джоша Кауфмана*/
 .kaufman {
