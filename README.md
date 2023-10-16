@@ -30,3 +30,5 @@
 * Google Chrome Версия 107.0.5304.107 
 * Firefox Browser Версия 107.0
 * Yandex Browser Версия 22.9.5.710
+
+Результат можно увидеть [здесь](https://noida-nataly.github.io/how-to-learn/).
